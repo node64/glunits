@@ -6,7 +6,7 @@ import (
 	"regexp"
 )
 
-var re = regexp.MustCompile("([0-9]+)([A-Za-z]+)")
+var re = regexp.MustCompile("([0-9.]+)([A-Za-z]+)")
 
 func main() {
 
