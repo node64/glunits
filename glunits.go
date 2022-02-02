@@ -3,7 +3,7 @@ package main
 import (
     "fmt"
     "os"
-	"regexp"
+    "regexp"
 )
 
 var re = regexp.MustCompile("([0-9.]+)([A-Za-z]+)")
