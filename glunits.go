@@ -20,16 +20,17 @@ func lowercase(array []string) {
 
 func main() {
 
-	//Command-line Arguments
+	// Command-line Arguments
 	args := os.Args[1:]
 	
-	//Pass to lower case
+	// Pass to lower case
 	lowercase(args)
 
-	//Check the number of arguments
+	// Check the number of arguments
 	if len(args) < 4 {
 		matches := re.FindStringSubmatch(args[0])
 		if len(matches) > 1 {
+			// Number match!
 			fmt.Println(stringTofloat(matches[1])*12)
 		} else {
 			fmt.Println("The first argument is not a number")
