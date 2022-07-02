@@ -81,6 +81,7 @@ var c = []dataC{
 	{"micrometer", "nanometer", "1000"},
 }
 
+#reg
 var re = regexp.MustCompile("([0-9.]+)([a-z/]+)")
 
 func lowercase(array []string) {
